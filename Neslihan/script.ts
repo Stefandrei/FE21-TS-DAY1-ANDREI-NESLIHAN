@@ -15,9 +15,10 @@ var mul_tbl = document.getElementById("multiply");
 
 for (let val of arr_one_to_ten) {
     mul_tbl.innerHTML += `<h3>by` + val.toString();
-    for (let val of arr_one_to_ten) {
+
+    for (let mul of arr_one_to_ten) {
         
-        mul_tbl.innerHTML += val.toString() + ` X ` + val.toString() + ` = ` + val*val + `<br>`;
+        mul_tbl.innerHTML += val.toString() + ` X ` + mul.toString() + ` = ` + val*mul + `<br>`;
     }
 }
 
